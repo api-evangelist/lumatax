@@ -1,8 +1,26 @@
 aid: lumatax
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lumatax.png
 name: LumaTax
-description: 'LumaTax is a company surfaced as a portfolio company of cowboy-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'LumaTax is a US and Canadian sales tax automation platform that helps businesses
+  automate sales tax filings, manage nexus exposure, and streamline remittance across multiple
+  state and federal jurisdictions. The product imports transaction data from sources such as
+  Amazon, Stripe, Shopify, and Excel, validates that data and assigns correct tax jurisdictions,
+  generates categorized return summaries, files returns automatically, and stores past filings
+  for audit preparation. Originally an independent Seattle fintech backed by Cowboy Ventures,
+  LumaTax was acquired and is now offered as a product line under Taxually alongside CrossTax,
+  EcoTax, and OneTax. As of enrichment it exposes no public developer portal, API reference, SDK,
+  or machine-readable API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/lumatax/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +28,34 @@ x-backed-by:
 - cowboy-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: taxually
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Sales Tax
+- Tax Compliance
+- Tax Automation
+- Tax Filing
+- Nexus
+- Accounting
+- Regulatory
 apis: []
+common:
+- type: DomainSecurity
+  url: security/lumatax-domain-security.yml
+- type: Website
+  url: https://www.taxually.com/lumatax
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
